@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(
-        value="seata-mq-two",
-        fallback = TwoClientFallback.class
+        value="seata-mq-two"
+//        fallback = TwoClientFallback.class
 )
 public interface TwoClient {
 
